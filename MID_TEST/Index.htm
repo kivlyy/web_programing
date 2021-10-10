@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentListApp</title>
+    <link rel="stylesheet" href="Design.css">
+
+    <script src="https://kit.fontawesome.com/19b62bd88e.js" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+    <nav id="nav">
+        <div class="nama">
+            <h1>Student Management MiniApp</h1>
+        </div>
+        <ul>
+            
+            <li><a href="">Home</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <p>Student Management</p>
+    <h2>MiniApp</h2>
+
+    <hr>
+
+    <table style="width: 100%;">
+        <tr>
+            <td>
+                <h4>Add Student</h4>
+            </td>
+            <td>
+                <h4>Filter Student By</h4>
+            </td>
+        </tr>
+    </table>
+
+    <button onclick="show_hide()">Form Add New Student</button>
+<form id="daftar">
+    <table style="width: 100%; ">
+        <tr>
+           
+            <td>
+                    <h3>Student ID (NIM)</h3>
+                    <input type="text" name="studentnim" id="student-nim">
+                    
+                    <p></p>
+                    
+                    <h3>Full Name</h3>
+                    <input type="text" name="studentname" id="student-name">
+                    
+                    <p></p>
+                    
+                    <h3>Gander</h3>
+                    <ul id="gander">
+                        <input type="radio" id="Male" name="fav_language" value="Male">
+                        <label for="Male">Male</label><br>
+                        <input type="radio" id="Female" name="fav_language" value="Female">
+                       <label for="Female">Female</label><br>
+                    </ul>
+                    
+                    <p></p>
+
+                    <h3>Faculty</h3>
+                    <label for="faculty"></label>
+                    <select id="faculty" name="faculty">
+                        <option value="faculty">~SELECT FACULTY~</option>
+                        <option value="pascasarjana">Pascasarjana</option>
+                        <option value="Fakultas_Filsafat">Fakultas Filsafat</option>
+                        <option value="Fakultas_Keguruan_dan_Ilmu_Pendidikan">Fakultas Keguruan dan Ilmu Pendidikan</option>
+                        <option value="Fakultas_Ekonomi_dan_Bisnis">Fakultas Ekonomi dan Bisnis</option>
+                        <option value="Fakultas_Pertanian">Fakultas Pertanian</option>
+                        <option value="Fakultas_Ilmu_Komputer">Fakultas Ilmu Komputer</option>
+                        <option value="Fakultas_Keperawatan">Fakultas Keperawatan</option>
+                        <option value="Akademi_Sekretari_Manajemen_Indonesia_Klabat">Akademi Sekretari Manajemen Indonesia Klabat</option>
+                    </select>
+
+                    <p></p>
+
+                    <h3>Program Study</h3>
+                    <label for="programstudy"></label>
+                    <select name="programstudy" id="programstudy">
+                        <option value="programstudy">~SELECT PROGRAM STUDY~</option>
+                        <option value="SI">Sistem Informasi</option>
+                        <option value="Manajemen">Manajemen</option>
+                        <option value="Perawat">Keperawatan</option>
+                        <option value="Akun">Akutansi</option>
+                        <option value="TI">Teknik Informasi</option>
+                        <option value="Pendeta">Kependetaan</option>
+                        <option value="sek">Sekertaris (D3)</option>
+                    </select>
+            </td>
+        </tr>
+    </table>
+
+    <input type="submit" value="Add student" style="padding-left: 255px; padding-right: 255px;">
+   
+</form>
+
+    <hr style="margin-top: 50px;">
+
+    <h5>Our Student</h5>
+
+    <ul id="liststudent">
+
+        <li class="list-item"></li>
+
+    </ul>
+    <div>
+        <input type="text" name="search" id="search-list" >
+    </div>
+
+
+    <table border="1" style="margin-left: 350px;" >
+        <tr>
+          <th>Student ID (NIM)</th>
+          <th>Full Name</th>
+          <th>Gander</th>
+          <th>Faculty</th>
+          <th>Program Study</th>
+          <th>Action</th>
+        </tr>
+      </table>
+
+
+    <footer>
+        made with 
+        <i class="fab fa-js-square"></i>
+        <i class="fab fa-bootstrap"></i>
+        <i class="fab fa-font-awesome"></i>
+        
+        <h3>
+            kivlyy
+            &#128293;
+            <i class="far fa-copyright"></i>
+            2021
+        </h3> 
+    </footer>
+
+    <script src="Program.js"></script>
+</body>
+</html> 
